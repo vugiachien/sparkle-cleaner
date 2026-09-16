@@ -1,0 +1,23 @@
+Bộ chạy Windows dựng sẵn cho Sparkle Cleaner.
+Python nhúng: 3.12.10 (amd64, tag cp312)
+Số wheel: 19
+
+PySocks-1.7.1-py3-none-any.whl
+beautifulsoup4-4.15.0-py3-none-any.whl
+certifi-2026.7.22-py3-none-any.whl
+charset_normalizer-3.5.1-cp312-cp312-win_amd64.whl
+colorama-0.4.6-py2.py3-none-any.whl
+filelock-3.32.6-py3-none-any.whl
+gdown-6.2.0-py3-none-any.whl
+idna-3.19-py3-none-any.whl
+numpy-2.5.3-cp312-cp312-win_amd64.whl
+opencv_python_headless-5.0.0.93-cp37-abi3-win_amd64.whl
+pillow-12.3.0-cp312-cp312-win_amd64.whl
+pyside6_essentials-6.11.2-cp310-abi3-win_amd64.whl
+requests-2.34.2-py3-none-any.whl
+scipy-1.18.1-cp312-cp312-win_amd64.whl
+shiboken6-6.11.2-cp310-abi3-win_amd64.whl
+soupsieve-2.9.2-py3-none-any.whl
+tqdm-4.70.0-py3-none-any.whl
+typing_extensions-4.16.0-py3-none-any.whl
+urllib3-2.7.0-py3-none-any.whl

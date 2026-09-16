@@ -1,0 +1,17 @@
+# Môi trường ảo và kết quả đóng gói của máy Mac — dựng lại được, tổng hơn 1 GB.
+.venv/
+build/
+dist/
+
+# Bộ chạy Windows: 182 MB wheel nhị phân, dựng lại bằng
+#     python3 tools/fetch_windows_runtime.py
+# Giữ manifest.txt để còn biết chính xác bộ 19 wheel nào đã được kiểm thử.
+win-runtime/*
+!win-runtime/manifest.txt
+
+# Thư mục Python nhúng do "Sparkle Cleaner.bat" tự tạo cạnh nó trên máy Windows.
+python/
+
+__pycache__/
+*.pyc
+.DS_Store

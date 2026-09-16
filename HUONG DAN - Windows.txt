@@ -1,0 +1,83 @@
+﻿SPARKLE CLEANER — HƯỚNG DẪN CHO MÁY WINDOWS
+================================================
+
+Tool này gỡ dấu sparkle (ngôi sao 4 cánh) của Gemini/Imagen khỏi ảnh, làm
+được hàng loạt. Máy bạn KHÔNG cần cài Python, KHÔNG cần mạng, KHÔNG cần
+quyền quản trị.
+
+
+BƯỚC 1 — CHÉP VÀO MÁY (đừng chạy thẳng từ USB)
+-----------------------------------------------
+
+Chép nguyên thư mục "sparkle-cleaner" từ USB vào ổ C: hoặc ra Desktop.
+
+Vì sao không chạy thẳng từ USB: lần đầu chạy tool phải ghi khoảng 400 MB
+vào cùng thư mục. Chạy trên USB vừa rất chậm, vừa có thể hỏng nếu USB bị
+khoá chống ghi.
+
+
+BƯỚC 2 — MỞ TOOL
+-----------------
+
+Nhấn đúp vào file:
+
+    Sparkle Cleaner.bat
+
+Lần đầu sẽ hiện một cửa sổ đen chạy chữ khoảng 1 phút — đó là lúc nó tự
+cài. ĐỪNG TẮT cửa sổ đó. Cài xong, cửa sổ đen tự đóng và giao diện tool
+hiện ra.
+
+Những lần sau mở sẽ nhanh, không phải chờ nữa.
+
+Nếu Windows hiện bảng xanh "Windows protected your PC":
+    nhấn "More info", rồi nhấn "Run anyway".
+Đó chỉ là vì file chưa mua chứng chỉ ký, không phải virus.
+
+Nếu phần mềm diệt virus hỏi, chọn cho phép. Tool không gửi gì lên mạng.
+
+
+BƯỚC 3 — DÙNG
+--------------
+
+1. Kéo thẳng ảnh, thư mục, hoặc file ZIP vào ô trắng phía trên.
+   (Hoặc bấm các nút "Thêm ảnh…", "Thêm thư mục…".)
+
+2. Chọn nơi lưu kết quả ở mục 2.
+
+3. Bấm "Bắt đầu".
+
+Ảnh gốc KHÔNG bao giờ bị ghi đè. Kết quả là file mới, có thêm chữ "_clean"
+ở cuối tên.
+
+
+KHI CÓ TRỤC TRẶC
+-----------------
+
+Đừng xoá hai thư mục "python" và "win-runtime" nằm cạnh file .bat — tool
+cần chúng để chạy.
+
+Nếu tool không mở được, làm thế này để lấy thông tin lỗi:
+
+1. Nhấn chuột phải vào chỗ trống trong thư mục, chọn "Mở trong Terminal"
+   (hoặc "Open in Windows Terminal" / "Open PowerShell window here").
+2. Chép nguyên dòng dưới đây, dán vào rồi Enter:
+
+       & ".\Sparkle Cleaner.bat" --selftest
+
+   (Nếu cửa sổ hiện chữ "C:\...>" thay vì "PS C:\...>" thì bỏ dấu & ở đầu.)
+
+3. Chụp màn hình toàn bộ cửa sổ đó gửi lại.
+
+Ngoài ra tool còn tự ghi lỗi vào file:
+
+    %LOCALAPPDATA%\Sparkle Cleaner\error.log
+
+Dán đúng dòng trên vào thanh địa chỉ của File Explorer là mở được.
+
+
+ĐIỀU CẦN BIẾT
+--------------
+
+Tool chỉ gỡ được dấu NHÌN THẤY ĐƯỢC. Ảnh do Gemini/Imagen tạo còn mang
+SynthID — một dấu vô hình nằm rải khắp các điểm ảnh. Công cụ kiểm tra của
+Google vẫn nhận ra đó là ảnh do AI tạo. Không có cách nào gỡ phần đó.

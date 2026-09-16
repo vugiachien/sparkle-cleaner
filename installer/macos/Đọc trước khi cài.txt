@@ -1,0 +1,18 @@
+SPARKLE CLEANER — CÀI TRÊN MAC
+
+1. Kéo biểu tượng "Sparkle Cleaner" sang thư mục "Applications" bên cạnh.
+
+2. Mở Launchpad (hoặc thư mục Applications), nhấn đúp Sparkle Cleaner.
+
+3. Lần đầu macOS sẽ báo không mở được, vì app chưa được Apple ký
+   (cần tài khoản nhà phát triển trả phí). Cách mở, chỉ phải làm một lần:
+   - Vào  System Settings → Privacy & Security, cuộn xuống cuối,
+     nhấn "Open Anyway", rồi xác nhận.
+   - Hoặc mở Terminal, dán dòng này rồi Enter:
+       xattr -cr "/Applications/Sparkle Cleaner.app"
+
+4. App đã có sẵn toàn bộ thư viện: không cần mạng, không cần cài Python.
+   Bản này dành cho Mac chip Apple (M1 trở lên).
+
+Nếu app không mở được, xem file lỗi tại:
+   ~/Library/Logs/Sparkle Cleaner/error.log
